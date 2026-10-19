@@ -1,0 +1,203 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080b10;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #202833, #080b10);
+}
+
+header h1 {
+    color: #ff3030;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #ccc;
+}
+
+nav {
+    background: #151a22;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff3030;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ff3030;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+h2 {
+    color: #ff3030;
+}
+
+p {
+    color: #ddd;
+}
+
+.car-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 25px #000;
+    transition: 0.4s;
+}
+
+.car-image:hover {
+    transform: scale(1.02);
+}
+
+.car-card {
+    background: #151a22;
+    border: 1px solid #303744;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    border-color: #ff3030;
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+button {
+    background: #ff3030;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc2020;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #151a22;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 6px;
+}
+
+footer {
+    background: #151a22;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+.counter-box {
+    background: #151a22;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid #303744;
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 60px;
+    font-weight: bold;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.counter-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #ff3030;
+    color: white;
+    cursor: pointer;
+}
+
+.counter-buttons button:hover {
+    background: #cc2020;
+}
+.error {
+    color: #d32f2f;
+    font-size: 14px;
+}
+
+.success {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+input.invalid {
+    border: 2px solid #d32f2f;
+}
+
+input.valid {
+    border: 2px solid #2e7d32;
+}
